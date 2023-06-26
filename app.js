@@ -1,10 +1,11 @@
 var increase = document.querySelector("#increase");
 var reset = document.querySelector("#reset");
-var decrease = document.querySelector("decrease");
+var decrease = document.querySelector("#decrease");
 
 increase.addEventListener("click", letIncrease);
-decrease.addEventListener("click", letDecrease);
 reset.addEventListener("click", letReset);
+decrease.addEventListener("click", letDecrease);
+
 
 
 
@@ -12,7 +13,6 @@ function letIncrease(){
     let number = document.getElementById("count").innerText;
     console.log(number);
     document.getElementById("count").innerHTML = `
-
     <div id = "number">
     <p id = "count"> ${(number*1) + 1} </p>
     </div>
@@ -42,7 +42,7 @@ function letReset(){
     document.getElementById("count").innerHTML = `
 
     <div id = "number">
-    <p id = "count"> ${0} </p>
+    <p id = "count"> ${number*0} </p>
     </div>
     
 
